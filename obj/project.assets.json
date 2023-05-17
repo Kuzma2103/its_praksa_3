@@ -9635,11 +9635,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kivan\\Desktop\\its_praksa-master\\AutomationFramework.csproj",
+      "projectUniqueName": "C:\\Users\\kivan\\Desktop\\ITS Praksa\\parabank_automation\\AutomationFramework.csproj",
       "projectName": "AutomationFramework",
-      "projectPath": "C:\\Users\\kivan\\Desktop\\its_praksa-master\\AutomationFramework.csproj",
+      "projectPath": "C:\\Users\\kivan\\Desktop\\ITS Praksa\\parabank_automation\\AutomationFramework.csproj",
       "packagesPath": "C:\\Users\\kivan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kivan\\Desktop\\its_praksa-master\\obj\\",
+      "outputPath": "C:\\Users\\kivan\\Desktop\\ITS Praksa\\parabank_automation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

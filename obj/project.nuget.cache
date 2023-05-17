@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KbO5fbLdwn7sutTQtISy2nj0mp1aQ/sVVMZ/2MwBDk2g4kVo3ibwaGh9ORbBIF1DqHRQxPwm1dTcXysMSQnSwQ==",
+  "dgSpecHash": "QT/AHOYtrVhkubnWkHm8TybgDdNN/Lca2qxyHZWvDKOlOIV71lKz34aTyp802aQ/fF8fHss0/ZY9yQue3unqbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kivan\\Desktop\\its_praksa-master\\AutomationFramework.csproj",
+  "projectFilePath": "C:\\Users\\kivan\\Desktop\\ITS Praksa\\parabank_automation\\AutomationFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kivan\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\kivan\\.nuget\\packages\\dnsclient\\1.2.0\\dnsclient.1.2.0.nupkg.sha512",
