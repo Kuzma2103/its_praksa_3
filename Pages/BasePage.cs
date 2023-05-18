@@ -1,10 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using AutomationFramework.Utils;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Threading;
 
 namespace AutomationFramework.Pages
 {
@@ -27,74 +25,19 @@ namespace AutomationFramework.Pages
         /// <summary>
         /// Metoda koja klikne na element
         /// </summary>
-        public void ClickOnElement(By element)
+        public void ClickElement(By element)
         {
             WaitElementVisibility(element);
-            driver.FindElement(element).Click();
+            CommonMethods.ClickOnElement(driver, element);
         }
 
         /// <summary>
         /// Metoda koja upisuje vrednost u polje
         /// </summary>
-        public void WriteTextToElement(By element, string text)
+        public void WriteText(By element, string text)
         {
             WaitElementVisibility(element);
-            driver.FindElement(element).SendKeys(text);
-        }
-
-        /// <summary>
-        /// Metoda koja cita text iz elementa
-        /// </summary>
-        public string ReadTextFromElement(By element)
-        {
-            WaitElementVisibility(element);
-            return driver.FindElement(element).Text;
-        }
-
-        /// <summary>
-        /// Metoda koja cita text iz alert box-a
-        /// </summary>
-        public string ReadTextFromAlertBox()
-        {
-            Thread.Sleep(1000);
-            return driver.SwitchTo().Alert().Text;
-        }
-
-        /// <summary>
-        /// Metoda koja potvrdjuje alert box
-        /// </summary>
-        public void AcceptAlertBox()
-        {
-            Thread.Sleep(1000);
-            driver.SwitchTo().Alert().Accept();
-        }
-
-        /// <summary>
-        /// Metoda koja vraca vrednosti celija iz prvog reda u tabeli
-        /// </summary>
-        /// <returns></returns>
-        public List<string> GetValuesFromFirstTableRow()
-        {
-            List<string> values = new List<string>();
-            ReadOnlyCollection<IWebElement> rows = driver.FindElements(By.XPath("//tr[@class='success']"));
-
-            try
-            {
-                IWebElement firstRow = rows[0];
-                ReadOnlyCollection<IWebElement> cells = driver.FindElements(By.XPath("//tr[@class='success']/td"));
-
-                foreach (IWebElement cell in cells)
-                {
-                    values.Add(cell.Text);
-                }
-            } catch (Exception)
-            {
-                throw;
-            }
-
-            return values;
-        }
-        
-    }
-    
+            CommonMethods.WriteTextToElement(driver, element, text);
+        }         
+    }    
 }
