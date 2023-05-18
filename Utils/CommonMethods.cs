@@ -108,5 +108,45 @@ namespace AutomationFramework.Utils
                 return false;
             }
         }
+
+        /// <summary>
+        /// Metoda koja vraca sve opcije iz select elementa
+        /// </summary>
+        /// <param name="driver">driver</param>
+        /// <param name="element">lokator elementa</param>
+        /// <returns>Vraca listu opcija iz select elementa</returns>
+        public static List<string> GetAllOptions(IWebDriver driver, By element)
+        {
+            List<string> optionsList = new List<string>();
+
+            try
+            {
+                ReadOnlyCollection<IWebElement> options = driver.FindElements(element);
+
+                foreach (IWebElement option in options)
+                {
+                    optionsList.Add(option.Text);
+                }
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return optionsList;
+        }
+
+        /// <summary>
+        /// Metoda koja vraca random vrednost iz liste
+        /// </summary>
+        /// <param name="list">lista</param>
+        /// <returns>vraca random vrednost iz liste</returns>
+        public static string GetRandomItemFromList(List<string> list)
+        {
+            Random rnd = new Random();
+            return list[rnd.Next(0, list.Count - 1)];
+        }
     }
 }

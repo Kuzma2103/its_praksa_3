@@ -40,6 +40,12 @@
                                 phone = "0604778234",
                                 message = "Neko fensi pitanje sa sve znakom upitnika na kraju?";
         }
+
+        public static class OpenAccount
+        {
+            public const string checking = "CHECKING",
+                                savings = "SAVINGS";
+        }
     }
 }
 

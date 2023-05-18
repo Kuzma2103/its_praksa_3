@@ -30,8 +30,7 @@ namespace AutomationFramework.Tests
             string registerUsername = Pages.RegisterUserPage.GetUsername();
             Assert.AreEqual(
                 $"{AppConstants.Constants.GenericMessage.usernameTitle} {_username}", 
-                registerUsername,
-                $"Poruka treba da bude {AppConstants.Constants.GenericMessage.usernameTitle} {_username}"
+                registerUsername
             );
 
         }
