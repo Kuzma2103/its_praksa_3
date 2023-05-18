@@ -30,6 +30,8 @@ namespace AutomationFramework.Pages
         By accountOverview = By.ClassName("ng-scope");
         By forgotLoginInfoLink = By.XPath("//a[contains(., 'Forgot login info?')]");
         By logoutLink = By.XPath("//a[contains(., 'Log Out')]");
+        By contactIcon = By.XPath("//a[contains(., 'contact')]");
+
 
 
         /// <summary>
@@ -89,6 +91,14 @@ namespace AutomationFramework.Pages
         public bool IsAccountOverviewPresented()
         {
             return CommonMethods.IsElementPresented(driver, accountOverview);
+        }
+
+        /// <summary>
+        /// Metoda koja klikne na contact ikonicu
+        /// </summary>
+        public void ClickOnContact()
+        {
+            ClickElement(contactIcon);
         }
 
         /// <summary>

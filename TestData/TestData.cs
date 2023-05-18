@@ -32,6 +32,14 @@
                                 zipCode = "49000",
                                 ssn = "123456789101";
         }
+
+        public static class ContactUs
+        {
+            public const string name = "Mita",
+                                email = "bekrija@gmail.com",
+                                phone = "0604778234",
+                                message = "Neko fensi pitanje sa sve znakom upitnika na kraju?";
+        }
     }
 }
 
