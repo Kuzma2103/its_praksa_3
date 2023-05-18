@@ -5,7 +5,7 @@ namespace AutomationFramework.Tests
 {
     public class RegisterUserTest : BaseTest
     {
-        string _username = CommonMethods.GenerateRandomUsername();
+        string _username = CommonMethods.GenerateRandomUsername("Marija");
 
         [Test]
         public void RegisterUser()

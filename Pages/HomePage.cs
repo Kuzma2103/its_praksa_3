@@ -28,6 +28,8 @@ namespace AutomationFramework.Pages
         By passwordField = By.Name("password");
         By loginButton = By.XPath("//input[@value='Log In']");
         By accountOverview = By.ClassName("ng-scope");
+        By forgotLoginInfoLink = By.XPath("//a[contains(., 'Forgot login info?')]");
+        By logoutLink = By.XPath("//a[contains(., 'Log Out')]");
 
 
         /// <summary>
@@ -62,6 +64,22 @@ namespace AutomationFramework.Pages
         public void ClickOnLoginButton()
         {
             ClickElement(loginButton);
+        }
+        
+        /// <summary>
+        /// Metoda koja klikne na link Forgot login info?
+        /// </summary>
+        public void ClickOnForgotLoginInfo()
+        {
+            ClickElement(forgotLoginInfoLink);
+        }
+
+        /// <summary>
+        /// Metoda koja klikne na logout link
+        /// </summary>
+        public void ClickOnLogout()
+        {
+            ClickElement(logoutLink);
         }
 
         /// <summary>

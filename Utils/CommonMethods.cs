@@ -71,12 +71,23 @@ namespace AutomationFramework.Utils
         /// kao sufix na "Random User" string
         /// </summary>
         /// <returns></returns>
-        public static string GenerateRandomUsername()
+        public static string GenerateRandomUsername(string randomName)
         {
             Random random = new Random();
-            int randomNumber = random.Next(1000, 9999);
-            string username = "Random User " + randomNumber;
+            int randomNumber = random.Next(20, 9999);
+            string username = randomName + randomNumber;
             return username;
+        }
+        
+        /// <summary>
+        /// Metoda koja generise random broj
+        /// </summary>
+        /// <returns>Vraca random broj od do</returns>
+        public static int GeneratePassword(int from, int to)
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(from, to);
+            return randomNumber;
         }
 
         /// <summary>

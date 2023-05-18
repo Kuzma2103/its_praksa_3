@@ -21,6 +21,17 @@
             public const string username = "test",
                                 password = "test";
         }
+
+        public static class ForgotLoginInfo
+        {
+            public const string firstName = "Ronaldinho",
+                                lastName = "Gaucho",
+                                address = "Mozzart bet",
+                                city = "Rio",
+                                state = "Brazil",
+                                zipCode = "49000",
+                                ssn = "123456789101";
+        }
     }
 }
 
