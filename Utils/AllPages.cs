@@ -21,5 +21,10 @@ namespace AutomationFramework.Utils
             return page;
         }
 
+        public RegisterUserPage RegisterUserPage => GetPages<RegisterUserPage>();
+        public HomePage HomePage => GetPages<HomePage>();
+        public CustomerLookupPage CustomerLookupPage => GetPages<CustomerLookupPage>();
+        public ContactPage ContactPage => GetPages<ContactPage>();
+
     }
 }
