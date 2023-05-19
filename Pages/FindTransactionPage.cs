@@ -7,15 +7,24 @@ namespace AutomationFramework.Pages
 {
     public class FindTransactionPage : BasePage
     {
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public FindTransactionPage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public FindTransactionPage(IWebDriver webDriver)
         {
             driver = webDriver;
         }
+
+        // Locators
 
         By accountDropdown = By.Id("accountId");
         By dateInputField = By.Id("criteria.onDate");
@@ -49,6 +58,10 @@ namespace AutomationFramework.Pages
             ClickElement(findTransactionButton);
         }
 
+        /// <summary>
+        /// Metoda koja proverava da li je tabela vidljiva
+        /// </summary>
+        /// <returns></returns>
         public bool IsTransactionResultsDisplayed()
         {
             return CommonMethods.IsElementPresented(driver, transactionTable);

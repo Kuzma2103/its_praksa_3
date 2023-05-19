@@ -6,11 +6,18 @@ namespace AutomationFramework.Pages
 {
     public class TransferPage : BasePage
     {
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public TransferPage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public TransferPage(IWebDriver webDriver)
         {
             driver = webDriver;

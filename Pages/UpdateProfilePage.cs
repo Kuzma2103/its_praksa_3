@@ -6,15 +6,24 @@ namespace AutomationFramework.Pages
 {
     public class UpdateProfilePage : BasePage
     {
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public UpdateProfilePage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public UpdateProfilePage(IWebDriver webDriver)
         {
             driver = webDriver;
         }
+
+        // Locators
 
         By firstNameField = By.Id("customer.firstName");
         By lastNameField = By.Id("customer.lastName");
@@ -90,11 +99,18 @@ namespace AutomationFramework.Pages
             WriteText(phoneField, phone);
         }
 
+        /// <summary>
+        /// Metoda koja klikne na dugme update profile
+        /// </summary>
         private void ClickOnUpdateProfile()
         {
             ClickElement(updateProfileButton);
         }
 
+        /// <summary>
+        /// Metoda koja vraca vrednost profile title-a
+        /// </summary>
+        /// <returns>vraca vrednost profile title-a</returns>
         public string GetUpdateProfileTitle()
         {
             return CommonMethods.ReadTextFromElement(driver, profileTitle);

@@ -7,16 +7,25 @@ namespace AutomationFramework.Pages
 {
     public class BillPayPage : BasePage
     {
+
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public BillPayPage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public BillPayPage(IWebDriver webDriver)
         {
             driver = webDriver;
         }
 
+        // Locators
         By payeeNameField = By.Name("payee.name");
         By addressField = By.Name("payee.address.street");
         By cityField = By.Name("payee.address.city");
@@ -159,8 +168,9 @@ namespace AutomationFramework.Pages
             return CommonMethods.ReadTextFromElement(driver, amountComplete);
         }
 
-
-
+        /// <summary>
+        /// Metoda koja popunjava formu Pay bill
+        /// </summary>
         public void BillPay(
             string payeeName,
             string address,

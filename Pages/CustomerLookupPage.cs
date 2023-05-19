@@ -4,11 +4,18 @@ namespace AutomationFramework.Pages
 {
     public class CustomerLookupPage : BasePage
     {
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public CustomerLookupPage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public CustomerLookupPage(IWebDriver webDriver)
         {
             driver = webDriver;
@@ -88,6 +95,9 @@ namespace AutomationFramework.Pages
             WriteText(ssnField, ssn);
         }
 
+        /// <summary>
+        /// Metoda koja klikne na dugme Find login info
+        /// </summary>
         private void ClickOnFindByLoginInfoButton()
         {
             ClickElement(findMyLoginInfoButton);

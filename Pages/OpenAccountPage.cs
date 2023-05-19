@@ -8,15 +8,24 @@ namespace AutomationFramework.Pages
 {
     public class OpenAccountPage : BasePage
     {
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public OpenAccountPage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public OpenAccountPage(IWebDriver webDriver)
         {
             driver = webDriver;
         }
+
+        // Locators
 
         By dropdownElement = By.Id("type");
         By dropdownAccountElement = By.Id("fromAccountId");
