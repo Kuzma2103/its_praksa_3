@@ -13,7 +13,7 @@ namespace AutomationFramework.Tests
                 TestData.TestData.Login.password
             );
 
-            Pages.HomePage.ClickOnMenuItem("Find Transactions");            
+            Pages.HomePage.ClickOnMenuItem(AppConstants.Constants.MenuItems.findTransactions);            
         }
 
         [Test]

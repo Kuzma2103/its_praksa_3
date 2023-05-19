@@ -27,6 +27,7 @@ namespace AutomationFramework.Utils
         /// <param name="text">text koji upisujemo</param>
         public static void WriteTextToElement(IWebDriver driver, By element, string text)
         {
+            driver.FindElement(element).Clear();
             driver.FindElement(element).SendKeys(text);
         }
 

@@ -8,5 +8,16 @@
                                 successContactUs = "A Customer Care Representative will be contacting you.",
                                 openedAccountTitle = "Account Opened!";
         }
+
+        public static class GenericTitles
+        {
+            public const string contactTitle = "Profile Updated";
+        }
+
+        public static class MenuItems
+        {
+            public const string findTransactions = "Find Transactions",
+                                updateContactInfo = "Update Contact Info";
+        }
     }
 }

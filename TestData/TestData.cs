@@ -52,6 +52,28 @@
             public const string accountNumber = "15453",
                                 date = "05-19-2023";
         }
+
+        public static class UpdateContactInfo
+        {
+            // Register user
+            public const string firstName = "Kilian",
+                                lastName = "Mbape",
+                                address = "Neka francuska ulica",
+                                city = "Parizzzzz",
+                                state = "Franceeeee",
+                                zipCode = "49000",
+                                phone = "00381631072590",
+                                ssn = "123456789101",
+                                password = "lazniMbape-lazniPasos2",
+                                // Update Contact Info
+                                firstNameUpdated = "Da Silva Dos Santos Junior",
+                                lastNameUpdated = "Neymar",
+                                addressUpdated = "Neka francuska ulica",
+                                cityUpdated = "Parizzzzz",
+                                stateUpdated = "Franceeeee",
+                                zipCodeUpdated = "49000",
+                                phoneUpdated = "00381631072590";
+        }
     }
 }
 

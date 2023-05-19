@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
+using System.Threading;
 
 namespace AutomationFramework.Pages
 {
@@ -46,6 +47,7 @@ namespace AutomationFramework.Pages
         /// <param name="menuItem">Link u meniju</param>
         public void ClickOnMenuItem(string menuItem)
         {
+            Thread.Sleep(1000);
             string menuItemXpath = $"//a[contains(., '{menuItem}')]";
             By menuItemLocator = By.XPath(menuItemXpath);
             driver.FindElement(menuItemLocator).Click();
