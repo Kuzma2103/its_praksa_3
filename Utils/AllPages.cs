@@ -30,6 +30,7 @@ namespace AutomationFramework.Utils
         public ActivityPage ActivityPage => GetPages<ActivityPage>();
         public FindTransactionPage FindTransactionPage => GetPages<FindTransactionPage>();
         public UpdateProfilePage UpdateProfilePage => GetPages<UpdateProfilePage>();
+        public TransferPage TransferPage => GetPages<TransferPage>();
 
     }
 }

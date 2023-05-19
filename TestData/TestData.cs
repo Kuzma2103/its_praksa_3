@@ -74,6 +74,13 @@
                                 zipCodeUpdated = "49000",
                                 phoneUpdated = "00381631072590";
         }
+
+        public static class TransferFunds
+        {
+            public const string amount = "33533",
+                                fromAccount = "15453",
+                                toAccount = "23334";
+        }
     }
 }
 

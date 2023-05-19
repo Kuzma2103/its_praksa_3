@@ -17,7 +17,8 @@
         public static class MenuItems
         {
             public const string findTransactions = "Find Transactions",
-                                updateContactInfo = "Update Contact Info";
+                                updateContactInfo = "Update Contact Info",
+                                transferFunds = "Transfer Funds";
         }
     }
 }
