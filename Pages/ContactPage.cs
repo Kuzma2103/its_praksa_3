@@ -5,11 +5,18 @@ namespace AutomationFramework.Pages
 {
     public class ContactPage : BasePage
     {
+        /// <summary>
+        /// Konstruktor bez paramtra
+        /// </summary>
         public ContactPage()
         {
             driver = null;
         }
 
+        /// <summary>
+        /// Konstruktor sa parametrima
+        /// </summary>
+        /// <param name="webDriver">driver</param>
         public ContactPage(IWebDriver webDriver)
         {
             driver = webDriver;
@@ -56,6 +63,10 @@ namespace AutomationFramework.Pages
         /// <param name="message">message</param>
         private void EnterMessage(string message) 
         {
+            // Setovanje maxLength atributa na 1000
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("document.getElementById('message').setAttribute('maxlength', '1000')");
+            // Upis poruke
             WriteText(messageField, message);
         }
 

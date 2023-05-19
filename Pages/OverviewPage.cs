@@ -31,6 +31,5 @@ namespace AutomationFramework.Pages
         {
             ClickElement(openNewAccLink);
         }
-
     }
 }

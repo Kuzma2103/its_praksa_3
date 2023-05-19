@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
+using System.Threading;
 
 namespace AutomationFramework.Pages
 {
@@ -38,6 +39,18 @@ namespace AutomationFramework.Pages
         {
             WaitElementVisibility(element);
             CommonMethods.WriteTextToElement(driver, element, text);
-        }         
+        } 
+        
+        /// <summary>
+        /// Metoda koja klikne na odredjeni link u meniju
+        /// </summary>
+        /// <param name="menuItem">Link u meniju</param>
+        public void ClickOnMenuItem(string menuItem)
+        {
+            Thread.Sleep(1000);
+            string menuItemXpath = $"//a[contains(., '{menuItem}')]";
+            By menuItemLocator = By.XPath(menuItemXpath);
+            driver.FindElement(menuItemLocator).Click();
+        }
     }    
 }

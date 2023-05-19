@@ -28,6 +28,10 @@ namespace AutomationFramework.Utils
         public OverviewPage OverviewPage => GetPages<OverviewPage>();
         public OpenAccountPage OpenAccountPage => GetPages<OpenAccountPage>();
         public ActivityPage ActivityPage => GetPages<ActivityPage>();
+        public FindTransactionPage FindTransactionPage => GetPages<FindTransactionPage>();
+        public UpdateProfilePage UpdateProfilePage => GetPages<UpdateProfilePage>();
+        public TransferPage TransferPage => GetPages<TransferPage>();
+        public BillPayPage BillPayPage => GetPages<BillPayPage>();
 
     }
 }
