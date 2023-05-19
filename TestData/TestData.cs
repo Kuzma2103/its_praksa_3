@@ -81,6 +81,19 @@
                                 fromAccount = "15453",
                                 toAccount = "23334";
         }
+
+        public static class BillPay
+        {
+            public const string address = "Neka adresa",
+                                city = "Rio",
+                                state = "Brasil",
+                                zipCode = "12345",
+                                phone = "12345678",
+                                account = "555",
+                                verifyAccount = account,
+                                amount = "322323",
+                                fromAccount = "15453";
+        }
     }
 }
 

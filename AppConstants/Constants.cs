@@ -18,7 +18,8 @@
         {
             public const string findTransactions = "Find Transactions",
                                 updateContactInfo = "Update Contact Info",
-                                transferFunds = "Transfer Funds";
+                                transferFunds = "Transfer Funds",
+                                billPay = "Bill Pay";
         }
     }
 }

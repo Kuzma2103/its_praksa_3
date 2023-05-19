@@ -31,6 +31,7 @@ namespace AutomationFramework.Utils
         public FindTransactionPage FindTransactionPage => GetPages<FindTransactionPage>();
         public UpdateProfilePage UpdateProfilePage => GetPages<UpdateProfilePage>();
         public TransferPage TransferPage => GetPages<TransferPage>();
+        public BillPayPage BillPayPage => GetPages<BillPayPage>();
 
     }
 }
