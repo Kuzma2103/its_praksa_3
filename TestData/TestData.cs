@@ -46,6 +46,12 @@
             public const string checking = "CHECKING",
                                 savings = "SAVINGS";
         }
+
+        public static class FindTransaction
+        {
+            public const string accountNumber = "15453",
+                                date = "05-19-2023";
+        }
     }
 }
 
