@@ -56,6 +56,10 @@ namespace AutomationFramework.Pages
         /// <param name="message">message</param>
         private void EnterMessage(string message) 
         {
+            // Setovanje maxLength atributa na 1000
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("document.getElementById('message').setAttribute('maxlength', '1000')");
+            // Upis poruke
             WriteText(messageField, message);
         }
 
